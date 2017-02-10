@@ -16,7 +16,7 @@ console.log( obj[key] );
 => aaa
 => bbb
 
-PRACTICE
+PRACTICE REFERENCING OBJECT KEY VALUE PAIRS
 
 var album = {
   "title": "Purple Rain",
@@ -25,6 +25,6 @@ var album = {
 }
 
 for(var key in album){
-  console.log(key);
-    console.log(album[key]);
+  var friendly = "This album's " + key + " is " + album[key];
+    console.log( friendly );
 }
